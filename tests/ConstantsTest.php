@@ -15,13 +15,31 @@ class ConstantsTest extends \PHPUnit_Framework_TestCase
 
         $this->assertTrue(defined($fullyQualifiedConstant), "Constant $constant is not defined.");
         $this->assertEquals(constant($fullyQualifiedConstant), $timezone, "Constant $constant and $timezone differ.");
-        $this->assertInstanceOf(\DateTimeZone::class, new \DateTimeZone(constant($fullyQualifiedConstant)));
+    }
+
+    /**
+     * @test
+     * @dataProvider constants
+     */
+    public function it_should_contain_all_valid_strings_for_date_time_zone_objects($timezone)
+    {
+        $this->assertInstanceOf(\DateTimeZone::class, new \DateTimeZone($timezone));
     }
 
     public function timezones()
     {
-        return array_map(function($timezone){
-            return [$timezone];
-        }, \DateTimeZone::listIdentifiers());
+        return array_map([$this, 'toArray'], \DateTimeZone::listIdentifiers());
+    }
+
+    public function constants()
+    {
+        $ref = new \ReflectionClass(Constants::class);
+
+        return array_map([$this, 'toArray'], $ref->getConstants());
+    }
+
+    protected function toArray($arg)
+    {
+        return [$arg];
     }
 }

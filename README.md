@@ -1,4 +1,6 @@
-# DateTime\Constants
+# TimeZone\Constants
+
+[![Build Status](https://travis-ci.org/guiwoda/timezone-constants.svg?branch=master)](https://travis-ci.org/guiwoda/timezone-constants)
 
 All of PHP's timezone strings in handy constants.
 
