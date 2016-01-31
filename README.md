@@ -13,5 +13,8 @@ composer require datetime/constants
 Then use the constants wherever you need them:
 
 ```
-$nowInBuenosAires = new \DateTime('now', new \DateTimeZone(\TimeZone\Constants::AMERICA_ARGENTINA_BUENOS_AIRES));
+$nowInBuenosAires = new \DateTime(
+	'now', 
+	new \DateTimeZone(\TimeZone\Constants::AMERICA_ARGENTINA_BUENOS_AIRES)
+);
 ```
