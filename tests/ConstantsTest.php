@@ -15,6 +15,7 @@ class ConstantsTest extends \PHPUnit_Framework_TestCase
 
         $this->assertTrue(defined($fullyQualifiedConstant), "Constant $constant is not defined.");
         $this->assertEquals(constant($fullyQualifiedConstant), $timezone, "Constant $constant and $timezone differ.");
+        $this->assertInstanceOf(\DateTimeZone::class, new \DateTimeZone(constant($fullyQualifiedConstant)));
     }
 
     public function timezones()
