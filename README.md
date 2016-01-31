@@ -6,11 +6,11 @@ All of PHP's timezone strings in handy constants. PHP7 compatible branch.
 
 ## Versions
 
-| PHP version | branch                | library version |
-|-------------|-----------------------|-----------------|
-| 7.0+        | [master](tree/master) | `^1.0`          |
-| 5.6.*       | [php-56](tree/php-56) | `^0.1`          |
-| HHVM        | [php-56](tree/php-56) | `^0.1`          |
+| PHP version | branch                                                              | library version |
+|-------------|---------------------------------------------------------------------|-----------------|
+| 7.0+        | [master](https://github.com/guiwoda/timezone-constants/tree/master) | `^1.0`          |
+| 5.6.*       | [php-56](https://github.com/guiwoda/timezone-constants/tree/php-56) | `^0.1`          |
+| HHVM        | [php-56](https://github.com/guiwoda/timezone-constants/tree/php-56) | `^0.1`          |
 
 ## Usage
 
