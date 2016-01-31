@@ -1,0 +1,21 @@
+{
+    "name": "timezone/constants",
+    "description": "All of PHP's timezone strings in handy constants.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guido Contreras Woda",
+            "email": "guiwoda@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "TimeZone\\": "src/"
+        }
+    }
+}
