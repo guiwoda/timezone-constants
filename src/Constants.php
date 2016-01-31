@@ -105,7 +105,6 @@ interface Constants
     const AMERICA_EDMONTON = 'America/Edmonton';
     const AMERICA_EIRUNEPE = 'America/Eirunepe';
     const AMERICA_EL_SALVADOR = 'America/El_Salvador';
-    const AMERICA_FORT_NELSON = 'America/Fort_Nelson';
     const AMERICA_FORTALEZA = 'America/Fortaleza';
     const AMERICA_GLACE_BAY = 'America/Glace_Bay';
     const AMERICA_GODTHAB = 'America/Godthab';
