@@ -17,7 +17,7 @@ All of PHP's timezone strings in handy constants. PHP7 compatible branch.
 Require it through composer:
 
 ```
-composer require datetime/constants:^1.0
+composer require timezone/constants:^1.0
 ```
 
 Then use the constants wherever you need them:
